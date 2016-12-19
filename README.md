@@ -97,7 +97,7 @@ Cette API retourne la liste des comptoirs ordonnés par distance de la position 
 ```
 
 Le statut HTTP de cette API est:
-- **200** en code de sussès de l'appel
+- **200** en code de succès de l'appel
 - **404** si aucun comptoir n'a été trouvé dans un rayons de XXX km
 
 #### Exemple d'appel
