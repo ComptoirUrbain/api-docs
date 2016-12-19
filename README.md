@@ -6,11 +6,11 @@ Chaque partenaire de ComptoirUrbain, qui active l'utilisation des APIs, doit gé
 
 ## Obtenir un API Token
 
-Une fois connecté sur l'interface graphique du service ComptoirUrbain, le partenaire peut générer une API Key. Cette API Key doit être fournie dans n'importe quel appel d'API REST sous forme d'un header HTTP nommé `API_KEY`
+Une fois connecté sur l'interface graphique du service ComptoirUrbain, le partenaire peut générer une API Key. Cette API Key doit être fournie dans n'importe quel appel d'API REST sous forme d'un header HTTP nommé `Api-Key`
 
 Exemple:
 ```bash
-curl -H "API_KEY=XXXXXX" http://api.comptoirurbain.com/api/v1/box"
+curl -H "Api-Key=XXXXXX" http://api.comptoirurbain.com/api/v1/box"
 ```
 
 Où `XXXXXX` est l'API Key générée via l'interface
@@ -103,7 +103,7 @@ Le statut HTTP de cette API est:
 #### Exemple d'appel
 
 ```bash
-curl -XPOST -H "API_KEY=XXXXXX" \
+curl -XPOST -H "Api-Key=XXXXXX" \
             -H "Content-Type=application/json" \
             http://api.comptoirurbain.com/api/v1/box \
             -d '{"latitude": 48.8416835, "longitude": 2.2761939}'
