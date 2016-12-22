@@ -237,19 +237,19 @@ Cette API renvoie les détails de la livraison planifiée.
     "collectingEndDate": 1481302800000,
     "created": 1481198136602,
     "deliveries": [{        
-        "status": "ASSIGNED",
         "collectedDate": null,
         "deliveredDate": null,
         "deliveryCode": "123456",        
-        "size": "M",
-        "tempertureType": "FRESH"
+        "collectingCode": "123456",
+        "size": "S",
+        "temperture": "FRESH"
     }, {        
-        "status": "ASSIGNED",
         "collectedDate": null,
         "deliveredDate": null,
-        "deliveryCode": "123456",                
+        "deliveryCode": "123456",        
+        "collectingCode": "123456",
         "size": "M",
-        "tempertureType": "FRESH"
+        "temperture": "FRESH"
     }]
 }
 ```
