@@ -1,12 +1,12 @@
 # Documentation (DRAFT)
 
-Ce document liste l'ensemble des APIs publiques disponibles sur la plateform ComptoirUrbain. Toutes ces APIs nécessitent une authentification par **API Key**.  
+Ce document liste l'ensemble des APIs publiques disponibles sur la plateforme ComptoirUrbain. Toutes ces APIs nécessitent une authentification par **API Key**.  
 
 Chaque partenaire de ComptoirUrbain, qui active l'utilisation des APIs, doit générer, via l'interface du service ComptoirUrbain, une API Key permettant d'authentifier les appels d'APIs.
 
 ## Obtenir un API Token
 
-Une fois connecté sur l'interface graphique du service ComptoirUrbain, le partenaire peut générer une API Key. Cette API Key doit être fournie dans n'importe quel appel d'API REST sous forme d'un header HTTP nommé `Api-Key`
+Une fois connecté sur l'interface graphique du service ComptoirUrbain, le partenaire peut générer une API Key. Cette API Key doit être fournie dans tout appel d'API REST sous forme d'un header HTTP nommé `Api-Key`
 
 Exemple:
 ```bash
@@ -14,7 +14,6 @@ curl -H "Api-Key=XXXXXX" http://api.comptoirurbain.com/api/v1/box"
 ```
 
 Où `XXXXXX` est l'API Key générée via l'interface
-
 
 
 ## Lister les comptoirs
