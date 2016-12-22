@@ -44,6 +44,7 @@ Cette API retourne la liste des comptoirs ordonnés par distance de la position 
         "reference": "10045",
         "latitude": 48.8470573,
         "longitude": 2.3013761,
+        "distance": 0.5655,
         "status": "ACTIVE",
         "address": "2 rue Cambronne",
         "zipcode": "75015",
