@@ -149,32 +149,63 @@ Un objet JSON décrivant la demande de disponibilités:
 Cette API retourne pour chaque jour, quel créneaux peut être utilisé pour livrer.
 
 ```json
-{
-    "01.12.2016": {
+[{
+    "date": "22-12-2016",
+    "availabilities": {
         "0-6": true,
         "6-12": true,
         "12-18": true,
-        "18-12": true,
-    },    
-    "02.12.2016": {
-        "0-6": true,
-        "6-12": false,
-        "12-18": false,
-        "18-12": false,
-    },
-    "03.12.2016": {
+        "18-0": false
+    }
+}, {
+    "date": "23-12-2016",
+    "availabilities": {
         "0-6": false,
         "6-12": false,
-        "12-18": true,
-        "18-12": true,
-    },
-    "04.12.2016": {
+        "12-18": false,
+        "18-0": false
+    }
+}, {
+    "date": "24-12-2016",
+    "availabilities": {
         "0-6": true,
         "6-12": true,
         "12-18": true,
-        "18-12": true,
-    }    
-}
+        "18-0": true
+    }
+}, {
+    "date": "25-12-2016",
+    "availabilities": {
+        "0-6": true,
+        "6-12": true,
+        "12-18": true,
+        "18-0": true
+    }
+}, {
+    "date": "26-12-2016",
+    "availabilities": {
+        "0-6": true,
+        "6-12": true,
+        "12-18": true,
+        "18-0": true
+    }
+}, {
+    "date": "27-12-2016",
+    "availabilities": {
+        "0-6": true,
+        "6-12": true,
+        "12-18": true,
+        "18-0": true
+    }
+}, {
+    "date": "28-12-2016",
+    "availabilities": {
+        "0-6": true,
+        "6-12": true,
+        "12-18": true,
+        "18-0": true
+    }
+}]
 ```
 
 ## Planification de livraisons
