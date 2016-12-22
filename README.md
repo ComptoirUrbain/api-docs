@@ -293,14 +293,14 @@ GET https://api.comptoirurbain.com/api/v1/order/ORDER_REFERENCE
         "deliveryCode": "123456",        
         "collectingCode": "123456",
         "size": "S",
-        "tempertureType": "FRESH"
+        "temperture": "FRESH"
     }, {        
         "collectedDate": null,
         "deliveredDate": 1481202477000,
         "deliveryCode": "123456",                
         "collectingCode": "123456",
         "size": "M",
-        "tempertureType": "FRESH"
+        "temperture": "FRESH"
     }]
 }
 ```
