@@ -8,7 +8,7 @@ Cette API permet de retourner l'état des disponibilités de casiers sur une dur
 
 #### URL
 ```
-POST https://api.comptoirurbain.com/api/v1/locker
+POST https://api.comptoirurbain.com/api/v1/locker/<REFERENCE_COMPTOIR>
 ```
 
 #### Requête
@@ -17,21 +17,18 @@ Un objet JSON décrivant la demande de disponibilités:
 - combien de cases par taille et type
 
 ```json
-{
-    "reference": "<REFERENCE_COMPTOIR>",
-    "lockers": [
-        {
-            "size": "S",
-            "type": "FRESH",
-            "count": 1
-        },
-        {
-            "size": "M",
-            "type": "FRESH",
-            "count": 2
-        }
-    ]
-}
+[
+    {
+        "size": "S",
+        "type": "FRESH",
+        "count": 1
+    },
+    {
+        "size": "M",
+        "type": "FRESH",
+        "count": 2
+    }
+]
 ```
 
 #### Réponse
