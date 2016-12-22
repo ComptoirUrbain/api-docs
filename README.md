@@ -54,12 +54,12 @@ Cette API retourne la liste des comptoirs ordonnés par distance de la position 
             {
                 "size": "S",
                 "count": 12,
-                "type": "FRESH" 
+                "type": "FRESH"
             },
             {
                 "size": "M",
                 "count": 7,
-                "type": "FRESH" 
+                "type": "FRESH"
             }
         ],
         "openinghours": {
@@ -124,7 +124,7 @@ POST https://api.comptoirurbain.com/api/v1/locker
 ```
 
 #### Requête
-Un objet JSON décrivant la demande de disponibilités: 
+Un objet JSON décrivant la demande de disponibilités:
 - quel comptoir (identifié par sa référence)
 - combien de cases par taille et type
 
@@ -191,24 +191,24 @@ POST https://api.comptoirurbain.com/api/v1/order
 
 ```json
 {    
-    "boxReference": "REFERENCE_COMPTOIR",
-    "orderReference": "ORDER_REFERENCE",
+    "station": "REFERENCE_COMPTOIR",
+    "reference": "ORDER_REFERENCE",
     "firstname": "John",
     "lastname": "Doe",
     "email": "john@doe.com",
     "phone": "+3300000000",
     "notes": "Remarques optionnelles concernant la livraison",
-    "timeslot": "12-18",
+    "timeslot": 12,
     "deliveryDate": "08.12.2016",
     "booking": [{
-        "type": "FRESH",
+        "temperature": "FRESH",
         "size": "s",
         "count": 1
     }, {
-        "type": "FRESH",
+        "temperature": "FRESH",
         "size": "m",
         "count": 1
-    }] 
+    }]
 }
 ```
 
@@ -288,17 +288,17 @@ GET https://api.comptoirurbain.com/api/v1/order/ORDER_REFERENCE
     "collectingEndDate": 1481302800000,
     "created": 1481198136602,
     "deliveries": [{        
-        "status": "DELIVERED",
         "collectedDate": null,
         "deliveredDate": 1481202477000,
         "deliveryCode": "123456",        
+        "collectingCode": "123456",
         "size": "S",
         "tempertureType": "FRESH"
     }, {        
-        "status": "DELIVERED",
         "collectedDate": null,
         "deliveredDate": 1481202477000,
         "deliveryCode": "123456",                
+        "collectingCode": "123456",
         "size": "M",
         "tempertureType": "FRESH"
     }]
