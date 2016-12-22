@@ -217,7 +217,7 @@ Cette API renvoie les détails de la livraison planifiée.
 
 ```json
 {    
-    "orderRefrence": "ORDER_REFERENCE",
+    "reference": "ORDER_REFERENCE",
     "status": "ASSIGNED",    
     "box": {        
         "reference": "10045",
