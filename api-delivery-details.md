@@ -3,7 +3,7 @@ Cette API permet de récupérer les détails d'une livraison.
 
 #### URL
 ```
-GET https://api.comptoirurbain.com/api/v1/order/ORDER_REFERENCE
+GET http://sandbox.comptoirurbain.com/api/v1/order/ORDER_REFERENCE
 ```
 
 #### Requête

@@ -11,7 +11,7 @@ Une fois connecté sur l'interface graphique du service ComptoirUrbain, le parte
 
 Exemple:
 ```bash
-curl -H "Api-Key=XXXXXX" http://api.comptoirurbain.com/api/v1/box"
+curl -H "Api-Key=XXXXXX" http://sandbox.comptoirurbain.com/api/v1/box"
 ```
 
 Où `XXXXXX` est l'API Key générée via l'interface
