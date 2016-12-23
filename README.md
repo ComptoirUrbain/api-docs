@@ -1,4 +1,4 @@
-# Documentation (DRAFT)
+# Documentation
 
 Ce document liste l'ensemble des APIs publiques disponibles sur la plateforme ComptoirUrbain. Toutes ces APIs nécessitent une authentification par **API Key**.  
 
