@@ -1,4 +1,4 @@
-## Récupération des disponibilités de casiers
+# Récupération des disponibilités de casiers
 
 Cette API permet de retourner l'état des disponibilités de casiers sur une durée de 7 jours à partir de la date courante, avec 4 créneaux horaires par jours:
 - Entre 00:00 et 06:00
@@ -6,12 +6,12 @@ Cette API permet de retourner l'état des disponibilités de casiers sur une dur
 - Entre 12:00 et 18:00
 - Entre 18:00 et 00:00
 
-#### URL
+## URL
 ```
 POST http://sandbox.comptoirurbain.com/api/v1/locker/<REFERENCE_COMPTOIR>
 ```
 
-#### Requête
+## Requête
 Un objet JSON décrivant la demande de disponibilités:
 - quel comptoir (identifié par sa référence)
 - combien de cases par taille et type
@@ -31,7 +31,7 @@ Un objet JSON décrivant la demande de disponibilités:
 ]
 ```
 
-#### Réponse
+## Réponse
 Cette API retourne pour chaque jour, quel créneaux peut être utilisé pour livrer.
 
 ```json

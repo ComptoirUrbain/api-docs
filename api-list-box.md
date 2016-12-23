@@ -1,13 +1,13 @@
-## Lister les comptoirs
+# Lister les comptoirs
 
 Cette API permet de lister les comptoirs disponibles autour d'une position GPS (latitude, longitude).
 
-#### URL
+## URL
 ```
 POST http://sandbox.comptoirurbain.com/api/v1/box
 ```
 
-#### Requête
+## Requête
 Un objet JSON décrivant la position GPS autour de laquelle la recherche de comptoirs doit s'effectuer
 
 ```json
@@ -18,7 +18,7 @@ Un objet JSON décrivant la position GPS autour de laquelle la recherche de comp
 }
 ```
 
-#### Réponse
+## Réponse
 Cette API retourne la liste des comptoirs ordonnés par distance de la position fournie en entrée. La liste retourne le comptoir le plus proche en premier.  
 
 ```json
@@ -85,7 +85,7 @@ Le statut HTTP de cette API est:
 - **200** en code de succès de l'appel
 - **404** si aucun comptoir n'a été trouvé dans un rayons de `distance` km
 
-#### Exemple d'appel
+## Exemple d'appel
 
 ```bash
 curl -XPOST -H "Api-Key=XXXXXX" \

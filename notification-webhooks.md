@@ -1,10 +1,10 @@
-## Webhooks
+# Webhooks
 Les partenaires à qui l'option WebHook est activée, et pour laquelle une URL a été fournie, recevront en PUSH, les mises à jour de l'état de chaque livraison planifiée:
 * Livraisons annulées
 * Colis déposés
 * Colis retirés
 
-### Appel du WebHook
+## Appel du WebHook
 L'appel se fait par simple requête HTTP en POST, où le body de la requête est un JSON décrivant la commande en question:
 
 ```json

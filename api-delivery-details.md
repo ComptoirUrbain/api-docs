@@ -1,15 +1,15 @@
-## Récupération des détails d'une livraison
+# Récupération des détails d'une livraison
 Cette API permet de récupérer les détails d'une livraison.
 
-#### URL
+## URL
 ```
 GET http://sandbox.comptoirurbain.com/api/v1/order/ORDER_REFERENCE
 ```
 
-#### Requête
+## Requête
 *Cette API ne nécessite pas de body*
 
-#### Réponse
+## Réponse
 ```json
 {    
     "orderRefrence": "ORDER_REFERENCE",

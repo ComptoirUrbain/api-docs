@@ -1,13 +1,13 @@
-## Planification de livraisons
+# Planification de livraisons
 
 Cette API permet de confirmer une planification de livraison dans un comptoir donné.
 
-#### URL
+## URL
 ```
 POST http://sandbox.comptoirurbain.com/api/v1/order
 ```
 
-#### Requête
+## Requête
 
 ```json
 {    
@@ -32,7 +32,7 @@ POST http://sandbox.comptoirurbain.com/api/v1/order
 }
 ```
 
-#### Réponse
+## Réponse
 Cette API renvoie les détails de la livraison planifiée.
 
 ```json
