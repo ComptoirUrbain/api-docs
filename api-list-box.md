@@ -13,7 +13,8 @@ Un objet JSON décrivant la position GPS autour de laquelle la recherche de comp
 ```json
 {
     "latitude": 48.8416835,
-    "longitude": 2.2761939
+    "longitude": 2.2761939,
+    "distance": 5 // Distance en Kilometres, 0 pour pas limiter la liste à un rayon donné
 }
 ```
 
@@ -31,18 +32,21 @@ Cette API retourne la liste des comptoirs ordonnés par distance de la position 
         "zipcode": "75015",
         "city": "Paris",
         "country": "FR",
-        "lockers": [
-            {
-                "size": "S",
-                "count": 12,
-                "type": "FRESH"
-            },
-            {
-                "size": "M",
-                "count": 7,
-                "type": "FRESH"
-            }
-        ],
+        "lockers": [{
+            "size": "M",
+            "count": 19,
+            "temperture": "FRESH",
+            "height": 40,
+            "width": 30,
+            "depth": 43
+        }, {
+            "size": "S",
+            "count": 30,
+            "temperture": "FRESH",
+            "height": 22,
+            "width": 30,
+            "depth": 43
+        }],
         "openinghours": {
             "monday": [{
                 "from": "00:00",
@@ -79,7 +83,7 @@ Cette API retourne la liste des comptoirs ordonnés par distance de la position 
 
 Le statut HTTP de cette API est:
 - **200** en code de succès de l'appel
-- **404** si aucun comptoir n'a été trouvé dans un rayons de XXX km
+- **404** si aucun comptoir n'a été trouvé dans un rayons de `distance` km
 
 #### Exemple d'appel
 
