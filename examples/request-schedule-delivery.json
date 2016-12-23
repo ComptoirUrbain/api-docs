@@ -1,0 +1,15 @@
+{
+    "reference": "22122016-A",
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "johndoe@gmail.com",
+    "phone": null,
+    "timeslot": 18,
+    "deliveryDate": "22.12.2016",
+    "booking": [{
+        "temperature": "FRESH",
+        "size": "s",
+        "count": 1
+    }],
+    "station": "90005"
+}
