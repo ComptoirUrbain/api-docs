@@ -14,9 +14,11 @@ Un objet JSON décrivant la position GPS autour de laquelle la recherche de comp
 {
     "latitude": 48.8416835,
     "longitude": 2.2761939,
-    "distance": 5 // Distance en Kilometres, 0 pour pas limiter la liste à un rayon donné
+    "distance": 5
 }
 ```
+
+`distance`étant en Kilometres, 0 pour pas limiter la liste à un rayon donné
 
 ## Réponse
 Cette API retourne la liste des comptoirs ordonnés par distance de la position fournie en entrée. La liste retourne le comptoir le plus proche en premier.  
