@@ -93,3 +93,12 @@ Cette API retourne pour chaque jour, quel créneaux peut être utilisé pour liv
     }
 }]
 ```
+
+## Exemple d'appel
+
+```bash
+curl -XPOST -H 'Api-Key: XXXXXX' \
+            -H 'Content-Type: application/json' \            
+            https://cloud.comptoirurbain.com/api/v1/locker/<REFERENCE_COMPTOIR> \
+            -d '[{"size":"S","type":"FRESH","count":1},{"size":"M","type":"FRESH","count":2}]'
+```
