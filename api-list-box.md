@@ -4,7 +4,7 @@ Cette API permet de lister les comptoirs disponibles autour d'une position GPS (
 
 ## URL
 ```
-POST http://sandbox.comptoirurbain.com/api/v1/box
+POST https://cloud.comptoirurbain.com/api/v1/box
 ```
 
 ## Requête
@@ -90,8 +90,8 @@ Le statut HTTP de cette API est:
 ## Exemple d'appel
 
 ```bash
-curl -XPOST -H "Api-Key=XXXXXX" \
-            -H "Content-Type=application/json" \
-            http://sandbox.comptoirurbain.com/api/v1/box \
+curl -XPOST -H 'Api-Key: XXXXXX' \
+            -H 'Content-Type=application/json' \
+            https://cloud.comptoirurbain.com/api/v1/box \
             -d '{"latitude": 48.8416835, "longitude": 2.2761939}'
 ```

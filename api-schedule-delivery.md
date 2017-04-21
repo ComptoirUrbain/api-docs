@@ -4,7 +4,7 @@ Cette API permet de confirmer une planification de livraison dans un comptoir do
 
 ## URL
 ```
-POST http://sandbox.comptoirurbain.com/api/v1/order
+POST https://cloud.comptoirurbain.com/api/v1/order
 ```
 
 ## Requête

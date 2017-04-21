@@ -8,7 +8,7 @@ Cette API permet de retourner l'état des disponibilités de casiers sur une dur
 
 ## URL
 ```
-POST http://sandbox.comptoirurbain.com/api/v1/locker/<REFERENCE_COMPTOIR>
+POST https://cloud.comptoirurbain.com/api/v1/locker/<REFERENCE_COMPTOIR>
 ```
 
 ## Requête
