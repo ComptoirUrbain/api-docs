@@ -91,7 +91,7 @@ Le statut HTTP de cette API est:
 
 ```bash
 curl -XPOST -H 'Api-Key: XXXXXX' \
-            -H 'Content-Type=application/json' \
+            -H 'Content-Type: application/json' \
             https://cloud.comptoirurbain.com/api/v1/box \
             -d '{"latitude": 48.8416835, "longitude": 2.2761939}'
 ```
