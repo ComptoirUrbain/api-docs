@@ -1,12 +1,12 @@
 [
     {
         "size": "S",
-        "type": "FRESH",
+        "temperture": "FRESH",
         "count": 1
     },
     {
         "size": "M",
-        "type": "FRESH",
+        "temperture": "FRESH",
         "count": 2
     }
 ]

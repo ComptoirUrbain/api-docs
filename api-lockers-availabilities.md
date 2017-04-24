@@ -20,12 +20,12 @@ Un objet JSON décrivant la demande de disponibilités:
 [
     {
         "size": "S",
-        "type": "FRESH",
+        "temperture": "FRESH",
         "count": 1
     },
     {
         "size": "M",
-        "type": "FRESH",
+        "temperture": "FRESH",
         "count": 2
     }
 ]
@@ -100,5 +100,5 @@ Cette API retourne pour chaque jour, quel créneaux peut être utilisé pour liv
 curl -XPOST -H 'Api-Key: XXXXXX' \
             -H 'Content-Type: application/json' \            
             https://cloud.comptoirurbain.com/api/v1/locker/<REFERENCE_COMPTOIR> \
-            -d '[{"size":"S","type":"FRESH","count":1},{"size":"M","type":"FRESH","count":2}]'
+            -d '[{"size":"S","temperture":"FRESH","count":1},{"size":"M","temperture":"FRESH","count":2}]'
 ```
