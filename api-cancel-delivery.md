@@ -1,0 +1,50 @@
+# Annulation d'une livraison
+Cette API permet d'annuler une livraison.
+
+## URL
+```
+DELETE https://cloud.comptoirurbain.com/api/v1/order/ORDER_REFERENCE
+```
+
+## Requête
+*Cette API ne nécessite pas de body*
+
+## Réponse
+```json
+{    
+    "orderRefrence": "ORDER_REFERENCE",
+    "status": "CANCELLED",    
+    "box": {        
+        "reference": "10045",
+        "address": "2 rue Cambronne",
+        "zipcode": "75015",
+        "city": "Paris",
+        "country": "FR"        
+    },        
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "john@doe.com",
+    "phone": "+33000000000",
+    "notes": "Test",
+    "deliveryStartDate": 1481194800000,
+    "deliveryEndDate": 1481216400000,
+    "collectingStartDate": 1481216400000,
+    "collectingEndDate": 1481302800000,
+    "created": 1481198136602,
+    "deliveries": [{        
+        "collectedDate": null,
+        "deliveredDate": 1481202477000,
+        "deliveryCode": "123456",        
+        "collectingCode": "123456",
+        "size": "S",
+        "temperture": "FRESH"
+    }, {        
+        "collectedDate": null,
+        "deliveredDate": 1481202477000,
+        "deliveryCode": "123456",                
+        "collectingCode": "123456",
+        "size": "M",
+        "temperture": "FRESH"
+    }]
+}
+```

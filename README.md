@@ -23,4 +23,5 @@ Liste des APIs disponibles
 * [Récupération des disponibilités de casiers](api-lockers-availabilities.md)
 * [Planification de livraisons](api-schedule-delivery.md)
 * [Récupération des détails d'une livraison](api-delivery-details.md)
+* [Annulation d'une livraison](api-cancel-delivery.md)
 * [Webhooks de notifications](notification-webhooks.md)
